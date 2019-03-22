@@ -8,7 +8,7 @@ dashboard:
 
 bookmark:
     resource: "@BookmarkBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /book
 
 job:
     resource: "@JobBundle/Resources/config/routing.yml"
@@ -32,11 +32,22 @@ project:
 
 user:
     resource: "@UserBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /user
 
 homepage:
     resource: "@FrontBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /homepage
+
+logout:
+    path: /logout
+
+offer:
+    resource: "@OfferBundle/Resources/config/routing.yml"
+    prefix:   /offer
+
+portfolio:
+    resource: "@PortfolioBundle/Resources/config/routing.yml"
+    prefix:   /portfolio
 
 
 

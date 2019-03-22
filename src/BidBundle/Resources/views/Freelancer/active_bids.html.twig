@@ -113,9 +113,7 @@
 							</div>
 						</div>
 					</div>
-                        <div id="notif" class="notification notice closeable">
-                            <p id="message">All Fields Are Required.</p>
-                        </div>
+
 					<div>
 
 
@@ -172,7 +170,7 @@
 			$("#saveChanges").on("click", function(event){
 
 					let message=$('#message');
-					let notif=$('#notif');
+
 
 					event.preventDefault();
 					$.ajax({
@@ -184,13 +182,13 @@
 							if (response.validate === true)
 								{
 									message.text(response.message);
-                        			notif.addClass("success").removeClass("notice");
+
                         			window.location.href = response.redirect;
 								}
 							else
 								{
 									message.text(response.message);
-                        			notif.addClass("notice").removeClass("success");
+
 								}
 
 						},

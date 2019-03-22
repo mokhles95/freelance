@@ -29,6 +29,19 @@ class AppKernel extends Kernel
             new DashboardBundle\DashboardBundle(),
             new BlogBundle\BlogBundle(),
             new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
+            new OfferBundle\OfferBundle(),
+            new CMEN\GoogleChartsBundle\CMENGoogleChartsBundle(),
+            new Vich\UploaderBundle\VichUploaderBundle(),
+            new PortfolioBundle\PortfolioBundle(),
+            new ReportBundle\ReportBundle(),
+            new FOS\CKEditorBundle\FOSCKEditorBundle(),
+
+
+
+
+
+
+
 
         ];
 
